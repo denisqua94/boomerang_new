@@ -25,8 +25,10 @@ class Game {
     // в единую структуру данных
     this.track = (new Array(this.trackLength)).fill(' ');
     this.track[this.hero.position] = this.hero.skin;
+    this.track[this.enemy.position] = this.enemy.skin;
+    this.track[this.boomerang.position] = this.boomerang.skin;
   }
-
+  
   check() {
     if (this.hero.position === this.enemy.position) {
       this.hero.die();
