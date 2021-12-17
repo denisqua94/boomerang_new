@@ -1,13 +1,14 @@
+Анчоус, [17.12.2021 16:45]
 // Враг.
 
 class Enemy {
   constructor() {
     this.generateSkin();
-    this.position = 2;
+    this.position = 120;
   }
 
   generateSkin() {
-    const skins = ['👾', '💀', '👹', '👻', '👽', '👿', '💩', '🤡', '🤺', '🧛', '🧟', '🎃'];
+    const skins = ['🩳', '👒', '👕', '👗', '🥼', '👖', '👙', '👔', '🥋', '🥻', '🩱', '🩲'];
     this.skin = skins[Math.floor(Math.random() * skins.length)];
   }
 
