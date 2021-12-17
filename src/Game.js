@@ -51,13 +51,15 @@ class Game {
     }
 
     play() {
-        setInterval(() => {
-            // Let's play!
-            this.check();
-            this.regenerateTrack();
-            this.view.render(this.track);
-        });
+      // keyboard.runInteractiveConsole(this.hero);
+      setInterval(() => {
+        // Let's play!
+        this.check();
+        this.regenerateTrack();
+        this.view.render(this.track);
+      }, 50);
     }
-}
+  }
+  
 
 module.exports = Game;
